@@ -1,0 +1,18 @@
+#include<stdio.h>
+void prime(int);
+int main()
+{
+int num;
+printf("enter a number");
+scanf("%d",&num);
+prime(num);
+return 0;
+}
+void prime(int num)
+{
+    int i;
+  for(i=1;i<num;i++){
+    if(i%2==1 || i==2)
+        printf("%d",i);
+ }
+}
