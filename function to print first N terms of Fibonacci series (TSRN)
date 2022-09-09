@@ -1,0 +1,22 @@
+#include<stdio.h>
+void feb(int);
+int main()
+{
+int range;
+printf("enter the number");
+scanf("%d",&range);
+printf("the fibonacci series is: \n");
+feb(range);
+
+return 0;
+}
+void feb(int range)
+{
+    int a=0 ,b=1 ,c;
+    while(a<=range){
+    printf("%d",a);
+c=a+b;
+a=b;
+b=c;
+    }
+ }
