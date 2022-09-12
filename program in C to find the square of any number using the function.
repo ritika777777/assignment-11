@@ -1,0 +1,18 @@
+#include<stdio.h>
+void sqr(int);
+
+    int main(){
+        int num;
+        printf("enter a number");
+        scanf("%d",&num);
+        sqr(num);
+
+return 0;
+    }
+
+void sqr(int num)
+{
+    int a;
+    a=num*num;
+    printf("%d",a);
+}
