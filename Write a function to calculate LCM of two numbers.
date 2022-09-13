@@ -1,16 +1,23 @@
 #include <stdio.h>
+void rslt(int,int);
 int main() {
     int n1, n2, lcm;
     printf("Enter two positive integers: ");
     scanf("%d %d",&n1,&n2);
     lcm = (n1 > n2) ? n1 : n2;
+    rslt(n1,n2);
 
-    while (1) {
+return 0;
+}
+  void rslt(int n1, int n2)
+  {
+      int lcm;
+       while (1) {
         if (lcm % n1 == 0 && lcm % n2 == 0) {
             printf("The LCM is=%d.",lcm);
             break;
         }
         ++lcm;
     }
-    return 0;
-}
+  }
+
