@@ -1,0 +1,26 @@
+#include<stdio.h>
+void series(int);
+int main()
+{
+    int n,sum;
+    printf("enter no. of terms");
+    scanf("%d",&n);
+    printf("sum of series is = %d",sum);
+    return 0;
+}
+
+  int fact(int n)
+  {
+      if(n==0 || n==1)
+        return 1;
+      return n*fact(n-1);
+  }
+
+int sum(int num)
+{
+    int sum=0,i;
+    for(i=1;i<=num;i++)
+        sum += fact(i)/i;
+    return sum;
+}
+
